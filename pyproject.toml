@@ -1,0 +1,13 @@
+# Tooling config only (pytest, ruff). Dependencies live in api/requirements*.txt.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["api"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["api"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
