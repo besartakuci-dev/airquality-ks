@@ -6,8 +6,13 @@ University course project: Data Processing Systems.
 
 ## Architecture
 
+OpenAQ (air quality) and Open-Meteo (weather) data is published to Kafka, validated and aggregated by Spark, stored in PostgreSQL, used to train PM2.5 forecasting models, and served through a cached FastAPI backend to a React dashboard.
+
+- Full architecture, diagrams and component owners: [docs/architecture.md](docs/architecture.md)
+- Architecture decisions and alternatives: [docs/adr.md](docs/adr.md)
+
 ```
- External APIs ──► ingestion/ (Python producers)
+ OpenAQ / Open-Meteo ──► ingestion/ (Python producers)
                         │
                         ▼
                   Apache Kafka  (topics: air-quality-raw, weather-raw)

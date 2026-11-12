@@ -10,3 +10,4 @@ All notable changes to this project will be documented in this file.
 - Alembic initialized in `db/migrations/` (no migrations yet).
 - Docker Compose dev stack: PostgreSQL, Redis, Kafka (KRaft) with topic init, Spark master/worker, API, dashboard.
 - Makefile (`up`, `down`, `logs`, `test`, `migrate`) and GitHub Actions CI.
+- Docs: architecture decision records (`docs/adr.md`), architecture overview with Mermaid component and data-flow diagrams (`docs/architecture.md`).
